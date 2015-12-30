@@ -1,0 +1,122 @@
+.header {
+	display: flex;
+	height: 90px;
+	width: 100%;
+
+	@include breakpoint('small') {
+		height: 80px;
+	}
+}
+
+//searcher
+.searcher {
+	background: map-get($colors, main-color);
+	display: inline-block;
+	padding: 20px 0;
+	width: 75%;
+
+	@include breakpoint('medium') { 
+		width: 80%;
+	}
+
+	@include breakpoint('medium-small') { 
+		width: 75%;
+	}
+
+	@include breakpoint('small') { 
+		width: 71%;
+	}
+}
+
+.search-form {
+	width: 90%;
+	text-align: center;
+
+	@include breakpoint('>=small<=medium') {
+		width: 100%;
+	}
+}
+
+.content-searcher {
+	width: 100%;
+
+	@include breakpoint('>=small<=medium') {
+		width: 98%;
+	}
+}
+
+.icon-search {
+	position: relative;
+	top: 1px;
+	width: 20px;
+}
+
+//actions
+.header-actions {
+	background: darken-color(map-get($colors, main-color), 15%);
+	display: inline-block;
+	height: inherit;
+	width: 25%;
+
+	@include breakpoint('medium') {
+		width: 20%; 
+	}
+
+	@include breakpoint('medium-small') {
+		width: 25%; 
+	}
+
+	@include breakpoint('small') {
+		width: 29%; 
+	}
+}
+
+.box-actions {
+	padding: 20px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+
+	@include breakpoint('>=small<=medium') {
+		padding: 20px 0;
+	}
+}
+
+.tittle-app {
+	color: white;
+	display: inline-block;
+
+	@include breakpoint('>=small<=medium') {
+		display: none;
+	}
+}
+
+.btn-actions {
+	display: inline-block;
+	margin: 0 8px;
+
+	@include breakpoint('medium-small') {
+		margin: 0 5px;
+	}
+
+	@include breakpoint('small') {
+		margin: 0 5px;
+	}
+}
+
+.btn-new-recipe {
+	float: right;
+
+	@include breakpoint('>=small<=medium') {
+		float: none;
+	}
+}
+
+.btn-open-recipes {
+	display: none;
+
+	@include breakpoint('>=small<=medium') {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,36 @@
+.beginning {
+	background: white;
+	width: 80%;
+	@include breakpoint('medium-small') { 
+		width: 100%;
+	}
+}
+
+.container-begining {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.img-chef {
+	margin: 20px;
+
+	img {
+		width: 300px;
+	}
+
+}
+
+.box-text-start {
+	
+	padding: 20px 0;
+	
+	.text-start {
+		margin-bottom: 0;
+		font-size: 30px;
+		font-weight: 700;
+	}
+}
+
+.create-recipe {
+	margin: 20px 0;
+}

@@ -1,0 +1,23 @@
+$colors: (
+	black: #000,
+	border-color: #ddd,
+	gray-dark: #F2EEEA,
+	gray: #F8F8F8,
+	main-color: #50446C,
+	main-icon-color: #E15E18,
+	second-color: #58B0BC,
+	text-color: #666666,
+	white: #fff
+);
+
+$breakpoints: (
+	'xlarge'          : "(min-width: 1360px)",
+	'large'           : "(min-width: 1024px)",
+	'>=small<=medium' : "(min-width: 240px) and (max-width: 1023px)",
+	'>=medium'        : "(min-width: 600px)",
+	'medium'          : "(min-width: 600px) and (max-width: 1023px)",
+	'medium-small'    : "(min-width: 600px) and (max-width: 740px)",
+	'small'           : "(min-width: 240px) and (max-width: 599px)",
+	'small-small'     : "(min-width: 240px) and (max-width: 360px)"
+);
+

@@ -1,0 +1,13 @@
+.icon {
+	@include sizes(20px);
+
+	@include breakpoint('small') {
+		@include sizes(18px);
+	}
+}
+
+.icon-category {
+	@include sizes(18px);
+
+
+}
