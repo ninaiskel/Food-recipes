@@ -78,7 +78,7 @@ body {
 }
 
 .input {
-  border: 1px solid #ddd;
+  border: 1px solid #e2e2e2;
   height: 50px;
   box-sizing: border-box;
 }
@@ -118,6 +118,7 @@ body {
   transition: all ease-in-out 0.4s;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 2px -2px rgba(0, 0, 0, 0.2);
   border: none;
+  cursor: pointer;
 }
 .button:hover {
   background: #7dc1cb;
@@ -167,6 +168,89 @@ body {
 .icon-category {
   height: 18px;
   width: 18px;
+}
+
+.box-input-category {
+  height: 50px;
+  width: 100%;
+}
+
+.input-category {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  height: 50px;
+  margin: 0 0 0 1px;
+  padding: 0;
+  position: absolute;
+  text-indent: -10px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.input-category:focus {
+  outline: none;
+}
+
+.dropdown-text {
+  background: #F5F4F3;
+  border-bottom: 1px solid #e2e2e2;
+  cursor: pointer;
+  line-height: 50px;
+  position: absolute;
+  text-indent: 20px;
+  width: 100%;
+  top: 0;
+  color: #858585;
+}
+
+.btn-select {
+  height: 50px;
+  width: 50px;
+  background: #ebeae9;
+  float: right;
+}
+.btn-select:after {
+  border-color: #58B0BC transparent;
+  border-style: solid;
+  border-width: 5px 6px 0 6px;
+  content: " ";
+  height: 0px;
+  position: absolute;
+  right: 17px;
+  top: 23px;
+  width: 0px;
+}
+
+.dropdown-content {
+  background-color: #F5F4F3;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-indent: 20px;
+  top: 50px;
+  transition: all .25s ease;
+  width: 100%;
+}
+.dropdown-content a {
+  display: block;
+  color: #666666;
+}
+.dropdown-content a:hover {
+  text-decoration: none;
+  background: white;
+}
+
+.box-icon-category {
+  width: 18px;
+  padding-right: 15px;
+  position: relative;
+  top: 1px;
 }
 
 .header {
@@ -338,6 +422,15 @@ body {
 
 .create-recipe {
   margin: 20px 0;
+}
+
+.all-recipes {
+  background: #F8F8F8;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  width: 25%;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.16);
 }
 
 /*# sourceMappingURL=main.css.map */

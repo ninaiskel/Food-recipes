@@ -1,0 +1,11 @@
+.all-recipes {
+	background: map-get($colors,gray);
+	height: 100%;
+	position: fixed;
+	right: 0;
+	width: 25%;
+	box-shadow: -2px 2px 4px rgba(0,0,0,.16);
+}
+
+
+

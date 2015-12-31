@@ -1,0 +1,87 @@
+.box-input-category {
+	height: 50px;
+	width: 100%;
+}
+
+.input-category {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 0;
+	height: 50px;
+	margin: 0 0 0 1px;
+	padding: 0;
+	position: absolute;
+	text-indent: -10px;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	  
+	&:focus {
+		outline: none;
+	}
+}
+
+.dropdown-text {
+  background: map-get($colors, gray-dark);
+  border-bottom: 1px solid map-get($colors, border-color);
+  cursor: pointer;
+  line-height: 50px;
+  position: absolute;
+  text-indent: 20px;
+  width: 100%;
+  top: 0;
+  color: lighten-color(map-get($colors, text-color), 20%);
+}
+
+.btn-select {
+	@include sizes(50px);
+	background: darken-color(map-get($colors, gray-dark), 4%);
+	float: right;
+
+	&:after {
+	border-color: map-get($colors, second-color) transparent;
+	border-style: solid;
+	border-width: 5px 6px 0 6px;
+	content: " ";
+	height: 0px;
+	position: absolute;
+	right: 17px;
+	top: 23px;
+	width: 0px;
+	}
+}
+
+.dropdown-content {
+  background-color: map-get($colors, gray-dark);
+  border-top: 1px solid map-get($colors,border-color);
+   border-bottom: 1px solid map-get($colors,border-color);
+  line-height: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-indent: 20px;
+  top: 50px;
+  transition: all .25s ease;
+  width: 100%;
+  // opacity: 0;
+  // visibility:hidden;
+	
+  a {
+	display: block;
+	color: map-get($colors, text-color);
+
+	&:hover {
+		text-decoration: none;
+		background: white;
+	}
+  }
+}
+
+.box-icon-category {
+	width: 18px;
+	padding-right: 15px;
+	position: relative;
+	top: 1px;
+}
