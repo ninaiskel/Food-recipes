@@ -1,0 +1,52 @@
+.card-recipe {
+	background: white;
+	margin: 20px;
+	padding: 10px;
+
+	margin-top: 280px;
+}
+
+.photo-recipe-min {
+	display: inline-block;
+	margin-right: 10px;
+	
+	img {
+		@include sizes(80px);
+	}
+	
+}
+
+.content-card-recipe {
+	display: inline-block;
+
+	.title-recipe {
+		font-size: 18px; 
+		border-bottom: 1px solid map-get($colors, border-color); 
+		padding-bottom: 5px;
+		
+	}
+
+}
+
+.tags-min {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		font-weight: 300;
+		font-size: 14px; 
+	}
+}
+
+.tag-min {
+	display: inline-block;
+	
+	span {
+		margin-right: 6px;
+	}
+}
+
+.tag-time {
+	margin-left: 10px;
+}
