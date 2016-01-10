@@ -1,7 +1,8 @@
 .beginning {
 	background: white;
-	width: 80%;
-	@include breakpoint('medium-small') { 
+	width: 75%;
+	
+	@include breakpoint('>=small<=medium') {
 		width: 100%;
 	}
 }
@@ -17,11 +18,9 @@
 	img {
 		width: 300px;
 	}
-
 }
 
 .box-text-start {
-	
 	padding: 20px 0;
 	
 	.text-start {

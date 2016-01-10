@@ -1,9 +1,18 @@
+.box-card-recipe {
+	width: 100%;
+	display:inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
 .card-recipe {
 	background: white;
-	margin: 20px;
 	padding: 10px;
-
-	margin-top: 280px;
+	margin-top: 10px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .photo-recipe-min {
@@ -11,21 +20,28 @@
 	margin-right: 10px;
 	
 	img {
-		@include sizes(80px);
+		@include sizes(60px);
+
+		@include breakpoint('xlarge')  {
+			@include sizes(76px);
+		}
 	}
-	
+
 }
 
 .content-card-recipe {
-	display: inline-block;
-
+	width: 67%;
+	float: right;
+	
 	.title-recipe {
 		font-size: 18px; 
 		border-bottom: 1px solid map-get($colors, border-color); 
 		padding-bottom: 5px;
-		
 	}
 
+	@include breakpoint('xlarge')  {
+		width: 70%;
+	}
 }
 
 .tags-min {
@@ -47,6 +63,6 @@
 	}
 }
 
-.tag-time {
-	margin-left: 10px;
+.tag-category {
+	margin-right: 10px;
 }
