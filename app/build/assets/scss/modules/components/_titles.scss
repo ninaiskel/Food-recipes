@@ -1,0 +1,16 @@
+.title-big {
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.title-card {
+	font-size: 18px; 
+	border-bottom: 1px solid map-get($colors, border-color); 
+	padding-bottom: 5px;
+}
+
+.subtitle {
+	font-size: 20px;
+	font-weight: 700;
+}

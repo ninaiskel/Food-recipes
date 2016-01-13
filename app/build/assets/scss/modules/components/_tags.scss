@@ -1,0 +1,42 @@
+.tag-category {
+	margin-right: 10px;
+}
+
+.tags-min {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		font-weight: 300;
+		font-size: 14px; 
+	}
+}
+
+.tag-min {
+	display: inline-block;
+	
+	span {
+		margin-right: 6px;
+	}
+}
+
+
+
+.tags-big {
+	margin: 0;
+	padding: 0;
+	display: inline-block;	
+}
+
+.tag-big {
+	list-style: none;
+	float: left;
+	background: darken-color(map-get($colors, gray-dark), 4%);
+	padding: 10px 16px;
+	
+
+	span {
+		margin-right: 6px;
+	}
+}
