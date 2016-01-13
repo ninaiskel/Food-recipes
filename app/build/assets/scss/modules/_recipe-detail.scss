@@ -1,6 +1,7 @@
 .recipe-detail {
 	background: white;
 	width: 75%;
+	padding-top: 80px;
 	
 	@include breakpoint('>=small<=medium') {
 		width: 100%;
@@ -40,4 +41,32 @@
 
 .box-recipe {
 	margin: 40px 0;
+}
+
+.ingredients {
+	p {
+		margin-bottom: 10px; 
+	}
+}
+
+.social-share {
+	text-align: center;
+	padding: 40px 0;
+	background: map-get($colors, gray);
+
+}
+
+.socials {
+	padding: 20px 0;
+
+	a {
+		padding: 0 10px;
+		width: 72px;
+		height: 44px;
+		display: inline-block;
+	}
+}
+
+.share {
+	color: map-get($colors, second-color);
 }

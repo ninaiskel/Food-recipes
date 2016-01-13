@@ -13,3 +13,20 @@
 		}
 
 }
+
+.icon-social {
+	height:  40px;
+	transition: all ease 0.8s;
+
+	path {
+		fill: map-get($colors, second-color)
+	}
+
+	&:hover {
+		
+		path {
+			fill: lighten-color(map-get($colors, second-color), 6%);
+		}
+	}
+}
+
