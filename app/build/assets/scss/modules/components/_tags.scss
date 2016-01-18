@@ -21,8 +21,6 @@
 	}
 }
 
-
-
 .tags-big {
 	margin: 0;
 	padding: 0;
@@ -34,9 +32,8 @@
 	float: left;
 	background: darken-color(map-get($colors, gray-dark), 4%);
 	padding: 10px 16px;
-	
 
 	span {
-		margin-right: 6px;
+		margin-right: 8px;
 	}
 }

@@ -182,21 +182,107 @@
 
 </aside>
 
-	<section class="main-background beginning">
-		<div class="container-begining">
-			<div class="img-chef">
-				<img src="assets/img/svg/chef.svg" alt="">
-			</div>
+	<section class="main-background new-recipe">
+		<div class="box-main-title">
+			<h2 class="title-big">Nueva Receta</h2>
+
+			<a href="#" class="close button button-square right">
+				<span class="icon-new">
+					<img class="icon" src="assets/img/svg/close.svg" alt="">
+				</span>
+			</a>
+		</div>
 		
-			<div class="box-text-start">
-				<p class="text-start">Ya no perderas tus recetas,</p>
-				<p class="text-start">guardalas y revisalas cuando quieras</p>
-			</div>
-			<div class="create-recipe">
-				<button class="button button-style" value="new" name="new-recipe" type="">Crear nueva receta</button>
+		<div class="line"></div>
+
+		<div class="container-inside">
+			<div class="box-form">
+				<form class="form-recipe" action="">
+					<div class="field-form form-title">
+						<label class="label label-title" for="title">
+							Título						
+						</label>
+						<input class="input input-title" type="text" name="title" id="title">
+					</div>
+
+					<div class="field-form field-select">
+						<div class="field-iside field-category">
+							<label class="label" for="">
+								Categoría						
+							</label>
+							<ul class="select-category">
+								<li class="tag-big tag-category">
+									<a href="#">
+									<span><img class="icon icon-category" src="assets/img/svg/category/lunch.svg" alt=""></span>Almuerzo</a>
+								</li>
+								<li class="tag-big tag-category">
+									<a  href="#">
+									<span><img class="icon icon-category" src="assets/img/svg/category/salad.svg" alt=""></span>Ensaladas</a>
+								</li>
+								<li class="tag-big tag-category">
+									<a href="#">
+									<span><img class="icon icon-category" src="assets/img/svg/category/breakfast.svg" alt=""></span>Desayuno</a>
+								</li>
+								<li class="tag-big tag-category">
+									<a href="#">
+									<span><img class="icon icon-category" src="assets/img/svg/category/cake.svg" alt=""></span>Postre</a>
+								</li>
+							</ul>
+						</div>
+						<div class="field-iside field-time">
+							<label class="label label-time" for="time">
+							Tiempo de preparación					
+							</label>
+							<input class="input input-time" type="text" name="time" id="time">
+						</div>
+					</div>
+					
+					
+					<div class="field-form">
+						<label class="label label-100" for="">
+							Ingredientes					
+						</label>
+						<div class="input-half input-left">
+							<input class="input" type="text" name="time" id="time">
+						</div>
+						<div class="input-half">
+							<input class="input" type="text" name="time" id="time">
+						</div>
+						<div class="input-half input-left">
+							<input class="input" type="text" name="time" id="time">
+						</div>
+						<div class="input-half">
+							<input class="input" type="text" name="time" id="time">
+						</div>
+						<div class="add-input">
+							<a href="#"><span></span></a>
+						</div>
+
+						
+						<button class="button button-square right" value="new" name="new-recipe" type="">
+							<span class="icon-new">
+								<img class="icon" src="assets/img/svg/header/plus.svg" alt="">
+							</span>
+						</button>
+						
+					</div>
+					<div class="field-form">
+						<label class="label" for="">
+							Preparación				
+						</label>
+						<textarea class="input textarea" name="message" cols="24" rows="4" id="message"></textarea>
+					</div>
+
+					<div class="field-form">
+						<button class="button button-style right" value="new" name="new-recipe" type="">Crear Receta</button>
+					</div>
+				</form> 
 			</div>
 		</div>
+				
+
 	</section>
+
 
 </body>
 </html>

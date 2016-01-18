@@ -8,10 +8,12 @@
 
 .icon-category {
 	@include sizes(16px);
+	position: relative;
+	top: 2px;
+
 		@include breakpoint('xlarge') {
 			@include sizes(18px);
 		}
-
 }
 
 .icon-social {

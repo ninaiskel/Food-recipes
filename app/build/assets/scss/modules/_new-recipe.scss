@@ -1,0 +1,109 @@
+.box-form {
+	padding: 40px 0;
+}
+
+.close {
+	background: map-get($colors, gray);
+	position: relative;
+	top: -48px;
+	z-index: 1;
+
+	span {
+		position: relative;
+		top: 15px;
+
+		@include breakpoint('small'){ 
+			top: 12px;
+		}
+
+	}
+
+	&:hover {
+		background: darken-color(map-get($colors, gray-dark), 4%);
+	}
+
+}
+
+// form
+.form-recipe {
+	width: 100%;
+}
+
+.field-form {
+	width: 100%;
+	margin-bottom: 20px;
+	display: inline-block;
+
+	.input {
+		width: 100%;
+	}
+}
+
+.label {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.label-100 {
+	width: 100%;
+}
+
+.field-iside {
+	float: left;
+}
+
+.field-select {
+	margin-bottom: 0;
+
+	@include breakpoint('small'){
+		margin-bottom: 10px;
+	}
+}
+
+.field-category {
+	width: 70%;
+
+	@include breakpoint('small'){
+		width: 100%;
+	}
+}
+
+.field-time {
+	width: 30%;
+
+	@include breakpoint('small'){
+		width: 100%;
+	}
+}
+
+.select-category {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+
+	.tag-category {
+		padding: 0;
+		margin-bottom: 10px;
+
+		a {
+			display: block;	
+			color: map-get($colors, text-color);
+			padding: 12px 16px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&:hover {
+			background: darken-color(map-get($colors, gray), 4%);
+		}
+	}
+}
+
+.right {
+	float: right;
+}
+
+
+

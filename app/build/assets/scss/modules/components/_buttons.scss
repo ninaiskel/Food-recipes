@@ -10,6 +10,10 @@
 		background: lighten-color(map-get($colors, second-color), 22%);
 	}
 
+	&:active {
+		outline: none;
+	}
+
 	@include breakpoint('small') {
 		height: 40px;
 	}
@@ -37,3 +41,5 @@
 		background: lighten-color(map-get($colors, main-color), 12%);
 	}
 }
+
+

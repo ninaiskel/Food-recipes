@@ -4,6 +4,7 @@
 	width: 100%;
 	position: fixed;
 	margin-top: -10px;
+	z-index: 2;
 
 	@include breakpoint('small') {
 		height: 80px;

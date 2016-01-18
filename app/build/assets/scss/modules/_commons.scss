@@ -1,0 +1,9 @@
+.main-background {
+	background: white;
+	width: 75%;
+	padding-top: 80px;
+	
+	@include breakpoint('>=small<=medium') {
+		width: 100%;
+	}
+}

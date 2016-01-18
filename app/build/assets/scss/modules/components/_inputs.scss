@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 
 	&:focus {
-		outline-color: lighten-color(map-get($colors, main-color), 40%) 
+		outline-color: darken-color(map-get($colors, gray), 08%) 
 	}
 
 	@include breakpoint('small') {
@@ -30,4 +30,28 @@
 		margin: 0 8px;
 		top: -3px;
 	}
+}
+
+//new-recipe
+.input-half {
+	float: left;
+	width: 50%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+
+	&:nth-last-of-type(even) {
+		padding-left: 10px;
+
+		@include breakpoint('small') {
+			padding-left: 0;
+		}
+	}
+
+	@include breakpoint('small') {
+		width: 100%;
+	}
+}
+
+.textarea {
+	height: 100px;
 }
