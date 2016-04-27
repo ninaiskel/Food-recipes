@@ -1,0 +1,24 @@
+
+Interface designer: Jessica Aristimuño
+Twitter: @Ninaiskel
+From: Caracas, Venezuela
+
+/* SITE */
+                            
+Last update: 04/27/2016 
+Language: Español 
+Doctype:HTML5
+IDE: Sublime Text, ilustrator
+
+
+Technologies: 
+
+ Html
+ Css / Sass -  
+ Javascrip - npm
+
+ 
+Libraries & Framework
+
+Grunt -   http://gruntjs.com/ 
+Miniscss - https://github.com/manuelitox/mini.scss 
