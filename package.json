@@ -1,10 +1,10 @@
 {
-  "name"        : "grunt-starter",
-  "version"     : "0.0.2",
-  "description" : "My initial setup for Grunt works.",
+  "name"        : "recipe",
+  "version"     : "0.0.1",
+  "description" : "My initial recipe",
   "repository": {
     "type" : "git",
-    "url"  : "https://github.com/manuelitox/grunt-starter.git"
+    
   },
   "devDependencies": {
     "autoprefixer"          : "^6.0.3",
@@ -19,6 +19,7 @@
     "grunt-svgmin"          : "^3.0.0",
     "load-grunt-config"     : "^0.16.0",
     "time-grunt"            : "^1.2.0",
-    "cssnano"               : "^3.3.2"
+    "cssnano"               : "^3.3.2",
+    "Miniscss - https://github.com/manuelitox/mini.scss "
   }
 }

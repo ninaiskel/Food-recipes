@@ -39,4 +39,4 @@ Don't you know about Grunt? go to [oficial website](http://gruntjs.com/getting-s
 * [grunt-svgmin](https://github.com/sindresorhus/grunt-svgmin)
 * [load-grunt-config](https://github.com/firstandthird/load-grunt-config)
 * [time-grunt](https://github.com/sindresorhus/time-grunt)
-* [cssnano](https://github.com/ben-eb/cssnano)# Food-recipes
+* [cssnano](https://github.com/ben-eb/cssnano)
