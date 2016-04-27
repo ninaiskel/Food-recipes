@@ -33,7 +33,7 @@
 
 .search-form {
 	width: 90%;
-	text-align: center;
+	margin: 0 auto;
 
 	@include breakpoint('>=small<=medium') {
 		width: 100%;
@@ -87,17 +87,44 @@
 }
 
 .tittle-app {
-	color: white;
 	display: inline-block;
+
+	a {
+		color: white;
+		text-transform: uppercase;
+		display: block;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
 	@include breakpoint('>=small<=medium') {
 		display: none;
 	}
+
+	@include breakpoint('xlarge'){
+		h1 {
+			font-size: 34px;
+			padding-top: 3px;
+		}
+		
+	}
+
+	@include breakpoint('large'){
+		h1 {
+			font-size: 28px;
+			padding-top: 10px;
+		}
+		
+	}
+
+	
 }
 
 .btn-actions {
 	display: inline-block;
-	margin: 0 8px;
+	margin: 3px 8px 0;
 
 	@include breakpoint('medium-small') {
 		margin: 0 5px;
@@ -122,4 +149,9 @@
 	@include breakpoint('>=small<=medium') {
 		display: inline-block;
 	}
+}
+
+.icon-new {
+	display: block;
+	padding-top: 14px;
 }

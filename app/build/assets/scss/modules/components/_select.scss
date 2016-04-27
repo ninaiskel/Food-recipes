@@ -25,19 +25,20 @@
 .dropdown-text {
   background: map-get($colors, gray-dark);
   border-bottom: 1px solid map-get($colors, border-color);
+  color: lighten-color(map-get($colors, text-color), 20%);
   cursor: pointer;
   line-height: 50px;
-  position: absolute;
   text-indent: 20px;
   width: 100%;
-  top: 0;
-  color: lighten-color(map-get($colors, text-color), 20%);
+
 }
 
 .btn-select {
 	@include sizes(50px);
 	background: darken-color(map-get($colors, gray-dark), 4%);
 	float: right;
+	
+	
 
 	&:after {
 	border-color: map-get($colors, second-color) transparent;
@@ -49,24 +50,24 @@
 	right: 17px;
 	top: 23px;
 	width: 0px;
+	transition: all linear 0.3s;
 	}
 }
 
 .dropdown-content {
   background-color: map-get($colors, gray-dark);
-  border-top: 1px solid map-get($colors,border-color);
   border-bottom: 1px solid map-get($colors,border-color);
+  border-top: 1px solid map-get($colors,border-color);
+  display: none;
   line-height: 50px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: relative;
   text-indent: 20px;
-  top: 50px;
-  transition: all .25s ease;
+  top: -1px;
+  transition: all ease-in-out 0.6s;
   width: 100%;
-  opacity: 0;
-  visibility:hidden;
 	
   a {
 	display: block;
@@ -77,6 +78,16 @@
 		background: white;
 	}
   }
+}
+
+.btn-select-rot {
+	&:after {
+		transform: rotate(180deg);
+	}
+}
+
+.dropdown-content-open {
+	display: block; 
 }
 
 .box-icon-category {
