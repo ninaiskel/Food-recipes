@@ -1,5 +1,5 @@
 
-#recipes to keep your recipes
+#Recipes to keep your recipes
 
 design to save recipes.
 
@@ -16,13 +16,6 @@ design to save recipes.
 - framework css (scss) https://github.com/manuelitox/mini.scss
 - $npm install -g bower
 
-
-#Create by
-
-Interface designer: Jessica Aristimuño
-Html/css: Jessica Aristimuño
-Twitter: @Ninaiskel
-From: Caracas, Venezuela
 
 
 
